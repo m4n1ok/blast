@@ -36,6 +36,17 @@ export const parameters = {
     storySort: {
       order: JSON.parse(process.env.STORYBOOK_SORT_ORDER)
     }
+  },
+  html: {
+    prettier: {
+      tabWidth: 4,
+      useTabs: false,
+      htmlWhitespaceSensitivity: 'strict'
+    },
+    root: '#component-wrapper',
+    highlighter: {
+      wrapLines: false // default: true
+    }
   }
 };
 

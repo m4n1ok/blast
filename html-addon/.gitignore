@@ -1,0 +1,15 @@
+/node_modules
+/storybook/node_modules
+/vendor
+/tmp
+.env
+!.env.example
+.phpunit.result.cache
+npm-debug.log
+yarn-error.log
+.vscode
+.DS_Store
+/stories/*
+!/stories/.keep
+.php_cs.cache
+composer.lock

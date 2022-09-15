@@ -53,9 +53,16 @@ class DataStore
                 if ($file->getExtension() == 'php') {
                     $filename = str_replace('.php', '', $file->getFilename());
 
-                    $this->data[$filename] = include base_path(
+                    $filePath = base_path(
                         $file->getPathname(),
                     );
+                    if (file_exists($filePath)) {
+                        $this->data[$filename] = include $filePath;
+                    } else {
+                        if (file_exists($file->getPathname())) {
+                            $this->data[$filename] = include $file->getPathname();
+                        }
+                    }
                 }
             }
 

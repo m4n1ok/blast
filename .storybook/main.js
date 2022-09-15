@@ -7,7 +7,8 @@ module.exports = {
     '@storybook/addon-a11y',
     'storybook-addon-designs',
     'storybook-source-code-addon',
-    '@etchteam/storybook-addon-status'
+    '@etchteam/storybook-addon-status',
+    '../html-addon',
   ],
   core: {
     builder: 'webpack5'

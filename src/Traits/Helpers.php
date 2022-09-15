@@ -84,7 +84,6 @@ trait Helpers
             $this->runProcessInBlast([
                 'npm',
                 'ci',
-                '--production',
                 '--ignore-scripts',
             ]);
         }
